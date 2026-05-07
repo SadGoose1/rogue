@@ -1,0 +1,46 @@
+# Godot
+.godot/mono/temp/
+.godot/import/
+.godot/editor/
+.godot/global_script_class_cache.cfg
+.godot/mono/global_using_dirs.cfg
+
+# .NET
+bin/
+obj/
+*.user
+*.csproj.user
+*.suo
+
+# Python venv
+.venv/
+__pycache__/
+
+# Aider/IDE artifacts
+.aider.*
+
+# Editor configs
+.editorconfig
+.gitattributes
+
+# Godot
+.godot/mono/temp/
+.godot/import/
+.godot/editor/
+.godot/global_script_class_cache.cfg
+.godot/mono/global_using_dirs.cfg
+
+# .NET
+bin/
+obj/
+*.user
+*.csproj.user
+*.suo
+*.csproj.old
+
+# Assets pipeline
+character-designs/
+
+# OS
+.DS_Store
+Thumbs.db

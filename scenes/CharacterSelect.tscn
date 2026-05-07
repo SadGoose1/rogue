@@ -1,0 +1,102 @@
+[gd_scene load_steps=1 format=3 uid="uid://bh00uylt87c8"]
+
+[ext_resource type="Script" path="res://scripts/CharacterSelect.cs" id="1_gf3i6"]
+
+[node name="CharacterSelect" type="Control"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource("1_gf3i6")
+
+[node name="Background" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0.03, 0.01, 0.02, 1)
+
+[node name="Vignette" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0, 0, 0, 0.35)
+
+[node name="TitleLabel" type="Label" parent="."]
+anchors_preset = 10
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -200.0
+offset_right = 200.0
+offset_top = 16.0
+offset_bottom = 56.0
+theme_override_colors/font_color = Color(0.65, 0.06, 0.06, 1)
+theme_override_font_sizes/font_size = 28
+text = "CHOOSE YOUR HUNTER"
+horizontal_alignment = 1
+
+[node name="CardGrid" type="GridContainer" parent="."]
+anchors_preset = 0
+anchor_left = 0.02
+anchor_top = 0.1
+anchor_right = 0.58
+anchor_bottom = 0.95
+theme_override_constants/v_separation = 4
+theme_override_constants/h_separation = 4
+columns = 3
+
+[node name="InfoPanel" type="Panel" parent="."]
+anchors_preset = 0
+anchor_left = 0.6
+anchor_top = 0.1
+anchor_right = 0.98
+anchor_bottom = 0.95
+color = Color(0.06, 0.025, 0.035, 0.85)
+
+[node name="InfoLabel" type="Label" parent="InfoPanel"]
+offset_left = 16
+offset_top = 12
+offset_right = -16
+offset_bottom = 44
+theme_override_font_sizes/font_size = 24
+
+[node name="DescLabel" type="Label" parent="InfoPanel"]
+offset_left = 16
+offset_top = 52
+offset_right = -16
+offset_bottom = 84
+theme_override_colors/font_color = Color(0.7, 0.65, 0.6, 1)
+theme_override_font_sizes/font_size = 14
+
+[node name="StatsLabel" type="Label" parent="InfoPanel"]
+offset_left = 16
+offset_top = 92
+offset_right = -16
+offset_bottom = 140
+theme_override_colors/font_color = Color(0.8, 0.75, 0.7, 1)
+theme_override_font_sizes/font_size = 14
+
+[node name="GearLabel" type="Label" parent="InfoPanel"]
+offset_left = 16
+offset_top = 148
+offset_right = -16
+offset_bottom = 260
+theme_override_colors/font_color = Color(0.65, 0.6, 0.55, 1)
+theme_override_font_sizes/font_size = 12
+
+[node name="ConfirmButton" type="Button" parent="InfoPanel"]
+anchor_left = 0.1
+anchor_right = 0.9
+anchor_top = 0.8
+anchor_bottom = 0.9
+theme_override_colors/font_color = Color(0.82, 0.78, 0.74, 1)
+theme_override_font_sizes/font_size = 18
+text = "BEGIN DESCENT"
+
+[node name="BackButton" type="Button" parent="InfoPanel"]
+anchor_left = 0.1
+anchor_right = 0.9
+anchor_top = 0.91
+anchor_bottom = 0.98
+theme_override_colors/font_color = Color(0.7, 0.65, 0.6, 1)
+theme_override_font_sizes/font_size = 14
+text = "BACK"

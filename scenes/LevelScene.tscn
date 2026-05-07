@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=3 uid="uid://dehxyepq3xxf1"]
+
+[ext_resource type="Script" path="res://scripts/LevelGenerator.cs" id="1_hy1nb"]
+[ext_resource type="PackedScene" uid="uid://dt2s11scsjg5w" path="res://scenes/Player.tscn" id="2_hl3kd"]
+[ext_resource type="PackedScene" uid="uid://d4on5boetai0s" path="res://scenes/EnemyOverworld.tscn" id="3_in6ae"]
+[ext_resource type="Script" path="res://scripts/CameraController.cs" id="4_is3uv"]
+
+[node name="LevelScene" type="Node2D"]
+script = ExtResource("1_hy1nb")
+
+[node name="CameraController" type="Camera2D" parent="."]
+script = ExtResource("4_is3uv")
+anchor_mode = 1

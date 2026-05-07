@@ -1,0 +1,78 @@
+[gd_scene load_steps=1 format=3 uid="uid://bev30oklk7xsp"]
+
+[ext_resource type="Script" path="res://scripts/GameOverUI.cs" id="1_t7vdr"]
+
+[node name="GameOverScene" type="Control"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource("1_t7vdr")
+
+[node name="Background" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0.02, 0.005, 0.01, 1)
+
+[node name="Vignette" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0, 0, 0, 0.5)
+
+[node name="TitleLabel" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.2
+offset_left = -200.0
+offset_right = 200.0
+offset_top = -30.0
+offset_bottom = 30.0
+theme_override_colors/font_color = Color(0.65, 0.04, 0.04, 1)
+theme_override_colors/font_shadow_color = Color(0.1, 0.01, 0.01, 1)
+theme_override_constants/shadow_offset_x = 4
+theme_override_constants/shadow_offset_y = 4
+theme_override_font_sizes/font_size = 64
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="StatsLabel" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.45
+offset_left = -200.0
+offset_right = 200.0
+offset_top = -40.0
+offset_bottom = 40.0
+theme_override_colors/font_color = Color(0.7, 0.65, 0.6, 1)
+theme_override_font_sizes/font_size = 18
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RetryButton" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.65
+offset_left = -120.0
+offset_right = 120.0
+offset_top = -22.0
+offset_bottom = 22.0
+theme_override_colors/font_color = Color(0.8, 0.75, 0.7, 1)
+theme_override_font_sizes/font_size = 18
+text = "HUNT AGAIN"
+
+[node name="QuitButton" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.75
+offset_left = -120.0
+offset_right = 120.0
+offset_top = -22.0
+offset_bottom = 22.0
+theme_override_colors/font_color = Color(0.7, 0.65, 0.6, 1)
+theme_override_font_sizes/font_size = 16
+text = "RETURN TO MENU"
